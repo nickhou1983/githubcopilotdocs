@@ -1,7 +1,7 @@
 # 如何为Github Copilot 启用多模型支持
 
 ## 介绍
-Github Copilot 是一个GitHub开发的AI代码助手。它可以帮助开发人员编写代码，提供代码建议和自动完成。在本文中，我们将介绍如何为Github Copilot 启用OpenAI o1。
+Github Copilot 是一个GitHub开发的AI代码助手。它可以帮助开发人员编写代码，提供代码建议和自动完成。在本文中，我们将介绍如何为Github Copilot 启用多模型。
 
 ## 说明
 
@@ -68,5 +68,7 @@ __其中加粗的三个域名是本次更新新加的，如果你之前已经配
 
 VSCode: 1.95+
 Github Copilot Chat: 0.22+
+
+![alt text](image-5.png)
 
 
