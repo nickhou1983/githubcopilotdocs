@@ -11,8 +11,8 @@ Github Copilot 是一个GitHub开发的AI代码助手。它可以帮助开发人
 
 - GPT 4o: 默认模型，具备较强推理能力，响应速度快，适用于日常开发、代码重构、生成测试用例等场景。不限制请求次数；
 - OpenAI o1-preview: 具备高级推理能力，但是响应速度较慢，适用于代码性能调优、复杂算法生成、代码Bug诊断、代码重构、生成集成测试用例等场景。每天限制10次请求；
-- OpenAI o1-mini： 相较于o1-preview，o1-mini具备平衡的推理能，但是响应速度更快，每天限制50次请求；
-- Claude 3.5 Sonnet: Claud3.5 当前不针对中国地区用户开放，通过代理后可以使用，具备较强的推理能力，当前处于评估阶段，不适合生产环境使用；
+- OpenAI o1-mini： 相较于o1-preview，o1-mini具备平衡的推理能力，但是响应速度更快，每天限制50次请求；
+- Claude 3.5 Sonnet: Claude3.5 当前不针对中国地区用户开放，通过代理后可以使用，具备较强的推理能力，当前处于评估阶段，不适合生产环境使用，通过此链接了解Claude3.5 Sonnet的服务区域 https://www.anthropic.com/supported-countries ；
 
 ### 版本要求
 

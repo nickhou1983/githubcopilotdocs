@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Copilot IP Address Ranges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .ip-ranges {
+            margin-top: 20px;
+        }
+        .ip-range {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Copilot IP Address Ranges</h1>
+    <div id="ip-ranges" class="ip-ranges">
+        Loading IP address ranges...
+    </div>
+
+    <script>
+        async function fetchIpRanges() {
+            try {
+                const response = await fetch('https://api.github.com/meta');
+                const data = await response.json();
+                const copilotIpRanges = data.actions.filter(range => range.includes('copilot'));
+
+                const ipRangesContainer = document.getElementById('ip-ranges');
+                ipRangesContainer.innerHTML = '';
+
+                copilotIpRanges.forEach(range => {
+                    const rangeElement = document.createElement('div');
+                    rangeElement.className = 'ip-range';
+                    rangeElement.textContent = range;
+                    ipRangesContainer.appendChild(rangeElement);
+                });
+            } catch (error) {
+                console.error('Error fetching IP address ranges:', error);
+                document.getElementById('ip-ranges').textContent = 'Failed to load IP address ranges.';
+            }
+        }
+
+        fetchIpRanges();
+    </script>
+</body>
+</html>
